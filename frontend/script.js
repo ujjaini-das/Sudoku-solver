@@ -47,7 +47,7 @@ function getBoard() {
 
 async function solveSudoku() {
   message.innerText = "Solving...";
-  const res = await fetch("https://sudoku-solver-backend-0w7w.onrender.com//api/solve", {
+  const res = await fetch("https://sudoku-solver-t94a.onrender.com//api/solve", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ board: getBoard() })
